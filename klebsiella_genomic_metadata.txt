@@ -1,0 +1,318 @@
+strain	Sample	idnum	specnum	date	Isolate_from	species	ST	cluster
+ERR2303512	KPN125	NCS-0117	OM2014-0402	2014-02-03	carriage	Klebsiella pneumoniae	ST1322	32
+ERR2303513	KPN126	NCS-0119	OM2014-0403	2014-02-03	carriage	Klebsiella pneumoniae	ST896	24
+ERR2303514	KPN127	NCS-0119	OM2014-0403	2014-02-03	carriage	Klebsiella pneumoniae	ST1411	5
+ERR2303515	KPN128	NCS-0119	OM2014-0403	2014-02-03	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303516	KPN129	NCS-0120	OM2014-0404	2014-02-03	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303517	KPN130	NCS-0120	OM2014-0404	2014-02-03	carriage	Klebsiella pneumoniae	ST394	30
+ERR2303518	KPN131	NCS-0121	OM2014-0405	2014-02-03	carriage	Klebsiella pneumoniae	ST1411	5
+ERR2303519	KPN132	NCS-0123	OM2014-0407	2014-02-03	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303520	KPN133	NCS-0123	OM2014-0407	2014-02-03	carriage	Klebsiella pneumoniae	ST394	30
+ERR2303521	KPN134	NCSE-06	OM2014-0408	2014-02-03	environmental	Klebsiella pneumoniae	ST896	24
+ERR2303522	KPN135	NCSE-02	OM2014-0410	2014-02-03	environmental	Klebsiella pneumoniae	ST45	31
+ERR2303523	KPN136	NCSE-03	OM2014-0411	2014-02-03	environmental	Klebsiella pneumoniae	ST45	31
+ERR2303524	KPN137	NCSE-07	OM2014-0414	2014-02-03	environmental	Klebsiella pneumoniae	ST1322	32
+ERR2303525	KPN138	NCS-0124	OM2014-0419	2014-02-03	carriage	Klebsiella pneumoniae	ST394	30
+ERR2303526	KPN139	NCS-0126	OM2014-0425	2014-02-04	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303527	KPN140	NCS-0122	OM2014-0426	2014-02-04	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303528	KPN141	NCS-0125	OM2014-0427	2014-02-04	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303529	KPN142	NCS-0126	OM2014-0455	2014-02-06	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303530	KPN143	NCS-0117	OM2014-0456	2014-02-06	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303531	KPN144	NCS-0129	OM2014-0457	2014-02-06	carriage	Klebsiella pneumoniae	ST307	33
+ERR2303532	KPN145	NCS-0125	OM2014-0458	2014-02-06	carriage	Klebsiella pneumoniae	ST17	17
+ERR2303533	KPN146	NCS-0119	OM2014-0459	2014-02-06	carriage	Klebsiella pneumoniae	ST307	33
+ERR2303534	KPN147	NCS-0119	OM2014-0459	2014-02-06	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303535	KPN148	NCS-0123	OM2014-0461	2014-02-06	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303536	KPN149	NCS-0108	OM2014-0462	2014-02-06	carriage	Klebsiella pneumoniae	ST289-1LV	34
+ERR2303537	KPN150	NCS-0117	OM2014-0477	2014-02-07	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303538	KPN151	NCS-0123	OM2014-0489	2014-02-07	carriage	Klebsiella pneumoniae	ST289-1LV	34
+ERR2303539	KPN152	NCS-0128	OM2014-0510	2014-02-09	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303540	KPN153	NCS-0128	OM2014-0510	2014-02-09	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303541	KPN154	NCS-0108	OM2014-0515	2014-02-10	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303542	KPN155	NCS-0129	OM2014-0516	2014-02-10	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303543	KPN156	NCS-0131	OM2014-0518	2014-02-10	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303544	KPN157	NCS-0131	OM2014-0518	2014-02-10	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303545	KPN158	NCSE-06	OM2014-0524	2014-02-10	environmental	Klebsiella pneumoniae	ST469	35
+ERR2303546	KPN159	NCS-0108	OM2014-0555	2014-02-11	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303547	KPN160	NCS-0134	OM2014-0609	2014-02-17	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303548	KPN161	NCS-0136	OM2014-0610	2014-02-17	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1191	36
+ERR2303549	KPN162	NCS-0136	OM2014-0610	2014-02-17	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1822	37
+ERR2303550	KPN163	NCS-0132	OM2014-0611	2014-02-17	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1822	37
+ERR2303551	KPN164	NCS-0135	OM2014-0612	2014-02-17	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1191	36
+ERR2303552	KPN165	NCS-0138	OM2014-0613	2014-02-17	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1822	37
+ERR2303553	KPN166	NCS-0138	OM2014-0613	2014-02-17	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1822	37
+ERR2303554	KPN167	NCSE-02	OM2014-0615	2014-02-17	environmental	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1191	36
+ERR2303555	KPN168	NCS-0135	OM2014-0661	2014-02-20	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1822	37
+ERR2303556	KPN169	NCS-0134	OM2014-0662	2014-02-20	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST480-2LV	38
+ERR2303557	KPN170	NCS-0136	OM2014-0663	2014-02-20	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1191	39
+ERR2303558	KPN171	NCS-0138	OM2014-0667	2014-02-20	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1822	37
+ERR2303559	KPN172	NCS-0144	OM2014-0676	2014-02-21	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1191	36
+ERR2303560	KPN173	NCS-0144	OM2014-0676	2014-02-21	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1822	40
+ERR2303561	KPN174	NCS-0143	OM2014-0706	2014-02-24	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST480-2LV	38
+ERR2303562	KPN175	NCS-0136	OM2014-0707	2014-02-24	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303563	KPN176	NCS-0140	OM2014-0708	2014-02-24	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST477	42
+ERR2303564	KPN177	NCS-0138	OM2014-0710	2014-02-24	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303565	KPN178	NCS-0146	OM2014-0711	2014-02-24	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303566	KPN179	NCS-0146	OM2014-0711	2014-02-24	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1031	43
+ERR2303567	KPN180	NCS-0146	OM2014-0711	2014-02-24	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1031	43
+ERR2303568	KPN181	NCSE-06	OM2014-0717	2014-02-24	environmental	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	44
+ERR2303569	KPN182	NCSE-06	OM2014-0717	2014-02-24	environmental	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1031	43
+ERR2303570	KPN183	NCS-0143	OM2014-0745	2014-02-25	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303571	KPN184	NCS-0148	OM2014-0747	2014-02-25	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303572	KPN185	NCS-0142	OM2014-0775	2014-02-27	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303573	KPN186	NCS-0146	OM2014-0776	2014-02-27	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303574	KPN187	NCS-0146	OM2014-0776	2014-02-27	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	44
+ERR2303575	KPN188	NCS-0140	OM2014-0779	2014-02-27	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303576	KPN189	NCS-0153	OM2014-0788	2014-02-27	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303577	KPN190	NCS-0154	OM2014-0794	2014-02-28	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	44
+ERR2303578	KPN191	NCSE-05	OM2014-0827	2014-03-03	environmental	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1308	45
+ERR2303579	KPN192	NCSE-05	OM2014-0827	2014-03-03	environmental	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	44
+ERR2303580	KPN193	NCSE-06	OM2014-0828	2014-03-03	environmental	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303581	KPN194	NCSE-06	OM2014-0828	2014-03-03	environmental	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303582	KPN195	NCS-0140	OM2014-0832	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303583	KPN196	NCS-0142	OM2014-0833	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303584	KPN197	NCS-0142	OM2014-0833	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	44
+ERR2303585	KPN198	NCS-0146	OM2014-0834	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	44
+ERR2303586	KPN199	NCS-0148	OM2014-0835	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1834-2LV	46
+ERR2303587	KPN200	NCS-0151	OM2014-0837	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST414	47
+ERR2303588	KPN201	NCS-0152	OM2014-0838	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST414	47
+ERR2303589	KPN202	NCS-0153	OM2014-0839	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1834-2LV	46
+ERR2303590	KPN203	NCS-0153	OM2014-0839	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303591	KPN204	NCS-0154	OM2014-0840	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1834-2LV	46
+ERR2303592	KPN205	NCS-0158	OM2014-0851	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1308	45
+ERR2303593	KPN206	NCS-0158	OM2014-0851	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1697	48
+ERR2303594	KPN207	NCS-0157	OM2014-0852	2014-03-03	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303595	KPN208	NCS-0152	OM2014-0859	2014-03-04	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	44
+ERR2303596	KPN209	NCS-0154	OM2014-0860	2014-03-04	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	44
+ERR2303597	KPN210	NCS-0159	OM2014-0866	2014-03-05	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	44
+ERR2303598	KPN211	NCS-0159	OM2014-0866	2014-03-05	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	49
+ERR2303599	KPN212	NCS-0149	OM2014-0867	2014-03-05	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1697	48
+ERR2303600	KPN213	NCS-0149	OM2014-0867	2014-03-05	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	44
+ERR2303601	KPN214	NCS-0142	OM2014-0881	2014-03-06	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1697	48
+ERR2303602	KPN215	NCS-0146	OM2014-0882	2014-03-06	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	49
+ERR2303603	KPN216	NCS-0149	OM2014-0883	2014-03-06	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	44
+ERR2303604	KPN217	NCS-0149	OM2014-0883	2014-03-06	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	44
+ERR2303605	KPN218	NCS-0157	OM2014-0886	2014-03-06	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	41
+ERR2303606	KPN219	NCS-0159	OM2014-0887	2014-03-06	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1308	45
+ERR2303607	KPN220	NCS-0158	OM2014-0888	2014-03-06	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST283-2LV	50
+ERR2303608	KPN221	NCS-0157	OM2014-0905	2014-03-07	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST283-2LV	50
+ERR2303609	KPN222	NCS-0142	OM2014-0937	2014-03-10	carriage	Klebsiella variicola	ST1210-1LV	51
+ERR2303610	KPN223	NCS-0149	OM2014-0939	2014-03-10	carriage	Klebsiella variicola	ST368-2LV	52
+ERR2303611	KPN224	NCS-0159	OM2014-0940	2014-03-10	carriage	Klebsiella variicola	ST368-2LV	52
+ERR2303412	KPN25	NCSE-02	OM2014-0061	2014-01-06	environmental	Klebsiella pneumoniae	ST15	15
+ERR2303413	KPN26	NCSE-02	OM2014-0061	2014-01-06	environmental	Klebsiella pneumoniae	ST17-1LV	16
+ERR2303414	KPN27	NCSE-03	OM2014-0062	2014-01-06	environmental	Klebsiella pneumoniae	ST17	17
+ERR2303415	KPN28	NCSE-06	OM2014-0065	2014-01-06	environmental	Klebsiella pneumoniae	ST15	15
+ERR2303416	KPN29	NCSE-06	OM2014-0065	2014-01-06	environmental	Klebsiella pneumoniae	ST950	6
+ERR2303417	KPN30	NCS-0100	OM2014-0091	2014-01-08	carriage	Klebsiella pneumoniae	ST252	2
+ERR2303418	KPN31	NCS-0092	OM2014-0094	2014-01-08	carriage	Klebsiella pneumoniae	ST394	12
+ERR2303419	KPN32	NCS-0092	OM2014-0094	2014-01-08	carriage	Klebsiella pneumoniae	ST409	13
+ERR2303420	KPN33	NCS-0098	OM2014-0097	2014-01-09	carriage	Klebsiella pneumoniae	ST29	18
+ERR2303421	KPN34	NCS-0101	OM2014-0100	2014-01-09	carriage	Klebsiella pneumoniae	ST17	17
+ERR2303422	KPN35	NCS-0105	OM2014-0132	2014-01-11	carriage	Klebsiella pneumoniae	ST29	18
+ERR2303423	KPN36	NCS-0105	OM2014-0132	2014-01-11	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303424	KPN37	NCS-0098	OM2014-0140	2014-01-12	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303425	KPN38	NCS-0098	OM2014-0140	2014-01-12	carriage	Klebsiella pneumoniae	ST1074-1LV	10
+ERR2303426	KPN39	NCS-0098	OM2014-0140	2014-01-12	carriage	Klebsiella pneumoniae	ST626	14
+ERR2303427	KPN40	NCS-0096	OM2014-0146	2014-01-13	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303428	KPN41	NCS-0105	OM2014-0147	2014-01-13	carriage	Klebsiella pneumoniae	ST409	13
+ERR2303429	KPN42	NCS-0105	OM2014-0147	2014-01-13	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303430	KPN43	NCS-0103	OM2014-0148	2014-01-13	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303431	KPN44	NCS-0103	OM2014-0148	2014-01-13	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303432	KPN45	NCS-0104	OM2014-0151	2014-01-13	carriage	Klebsiella pneumoniae	ST409	13
+ERR2303433	KPN46	NCSE-02	OM2014-0154	2014-01-13	environmental	Klebsiella pneumoniae	ST20	19
+ERR2303434	KPN47	NCS-0107	OM2014-0174	2014-01-14	carriage	Klebsiella pneumoniae	ST626	14
+ERR2303435	KPN48	NCS-0107	OM2014-0174	2014-01-14	carriage	Klebsiella pneumoniae	ST1411	5
+ERR2303436	KPN49	NCS-0104	OM2014-0175	2014-01-14	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303437	KPN50	NCS-0091	OM2014-0177	2014-01-14	carriage	Klebsiella pneumoniae	ST244	11
+ERR2303438	KPN51	NCS-0091	OM2014-0177	2014-01-14	carriage	Klebsiella pneumoniae	ST626	14
+ERR2303439	KPN52	NCS-0091	OM2014-0177	2014-01-14	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303440	KPN53	NCS-0109	OM2014-0187	2014-01-15	carriage	Klebsiella pneumoniae	ST29	18
+ERR2303441	KPN54	NCS-0109	OM2014-0187	2014-01-15	carriage	Klebsiella pneumoniae	ST409	13
+ERR2303442	KPN55	NCS-0096	OM2014-0191	2014-01-16	carriage	Klebsiella pneumoniae	ST29	18
+ERR2303443	KPN56	NCS-0108	OM2014-0192	2014-01-16	carriage	Klebsiella pneumoniae	ST76	21
+ERR2303444	KPN57	NCS-0105	OM2014-0193	2014-01-16	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303445	KPN58	NCS-0105	OM2014-0193	2014-01-16	carriage	Klebsiella pneumoniae	ST17	17
+ERR2303446	KPN59	NCS-0092	OM2014-0195	2014-01-16	carriage	Klebsiella pneumoniae	ST37	22
+ERR2303447	KPN60	NCS-0103	OM2014-0196	2014-01-16	carriage	Klebsiella pneumoniae	ST432	23
+ERR2303448	KPN61	NCS-0103	OM2014-0196	2014-01-16	carriage	Klebsiella pneumoniae	ST252	2
+ERR2303449	KPN62	NCS-0107	OM2014-0197	2014-01-16	carriage	Klebsiella pneumoniae	ST896	24
+ERR2303450	KPN63	NCS-0105	OM2014-0215	2014-01-17	carriage	Klebsiella pneumoniae	ST37	25
+ERR2303451	KPN64	NCS-0108	OM2014-0241	2014-01-20	carriage	Klebsiella pneumoniae	ST17-1LV	16
+ERR2303452	KPN65	NCS-0108	OM2014-0241	2014-01-20	carriage	Klebsiella pneumoniae	ST490	26
+ERR2303453	KPN66	NCS-0111	OM2014-0242	2014-01-20	carriage	Klebsiella pneumoniae	ST17	17
+ERR2303454	KPN67	NCS-0111	OM2014-0242	2014-01-20	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303455	KPN68	NCS-0109	OM2014-0243	2014-01-20	carriage	Klebsiella pneumoniae	ST29	18
+ERR2303456	KPN69	NCS-0109	OM2014-0243	2014-01-20	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303457	KPN70	NCS-0112	OM2014-0244	2014-01-20	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303458	KPN71	NCS-0096	OM2014-0245	2014-01-20	carriage	Klebsiella pneumoniae	ST409	13
+ERR2303459	KPN72	NCS-0096	OM2014-0245	2014-01-20	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303460	KPN73	NCS-0103	OM2014-0246	2014-01-20	carriage	Klebsiella pneumoniae	ST626	14
+ERR2303461	KPN74	NCS-0092	OM2014-0247	2014-01-20	carriage	Klebsiella pneumoniae	ST37	25
+ERR2303462	KPN75	NCSE-02	OM2014-0249	2014-01-20	environmental	Klebsiella pneumoniae	ST101	20
+ERR2303463	KPN76	NCSE-06	OM2014-0253	2014-01-20	environmental	Klebsiella pneumoniae	ST1035	27
+ERR2303464	KPN77	NCS-0114	OM2014-0270	2014-01-21	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303465	KPN78	NCS-0114	OM2014-0270	2014-01-21	carriage	Klebsiella pneumoniae	ST896	24
+ERR2303466	KPN79	NCS-0111	OM2014-0275	2014-01-21	carriage	Klebsiella pneumoniae	ST37	22
+ERR2303467	KPN80	NCS-0111	OM2014-0275	2014-01-21	carriage	Klebsiella pneumoniae	ST432	23
+ERR2303468	KPN81	NCS-0108	OM2014-0281	2014-01-21	carriage	Klebsiella pneumoniae	ST896	24
+ERR2303469	KPN82	NCS-0108	OM2014-0281	2014-01-21	carriage	Klebsiella pneumoniae	ST1411	5
+ERR2303470	KPN83	NCS-0109	OM2014-0282	2014-01-23	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303471	KPN84	NCS-0092	OM2014-0283	2014-01-23	carriage	Klebsiella pneumoniae	ST1411	5
+ERR2303472	KPN85	NCS-0096	OM2014-0284	2014-01-23	carriage	Klebsiella pneumoniae	ST409	13
+ERR2303473	KPN86	NCS-0096	OM2014-0284	2014-01-23	carriage	Klebsiella pneumoniae	ST29	18
+ERR2303474	KPN87	NCS-0114	OM2014-0285	2014-01-23	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303475	KPN88	NCS-0113	OM2014-0287	2014-01-23	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303476	KPN89	NCS-0112	OM2014-0289	2014-01-23	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303477	KPN90	NCS-0096	OM2014-0301	2014-01-24	carriage	Klebsiella pneumoniae	ST29	18
+ERR2303478	KPN91	NCS-0103	OM2014-0320	2014-01-27	carriage	Klebsiella pneumoniae	ST409	13
+ERR2303479	KPN92	NCS-0113	OM2014-0321	2014-01-27	carriage	Klebsiella pneumoniae	ST563-1LV	28
+ERR2303480	KPN93	NCS-0112	OM2014-0323	2014-01-27	carriage	Klebsiella pneumoniae	ST37	29
+ERR2303481	KPN94	NCS-0112	OM2014-0323	2014-01-27	carriage	Klebsiella pneumoniae	ST409	13
+ERR2303482	KPN95	NCS-0108	OM2014-0324	2014-01-27	carriage	Klebsiella pneumoniae	ST394	30
+ERR2303483	KPN96	NCS-0108	OM2014-0324	2014-01-27	carriage	Klebsiella pneumoniae	ST432	23
+ERR2303484	KPN97	NCS-0115	OM2014-0325	2014-01-27	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303485	KPN98	NCS-0115	OM2014-0325	2014-01-27	carriage	Klebsiella pneumoniae	ST896	24
+ERR2303486	KPN99	NCSE-06	OM2014-0326	2014-01-27	environmental	Klebsiella pneumoniae	ST101	20
+ERR2303487	KPN100	NCSE-02	OM2014-0330	2014-01-27	environmental	Klebsiella pneumoniae	ST1411	5
+ERR2303488	KPN101	NCSE-02	OM2014-0330	2014-01-27	environmental	Klebsiella pneumoniae	ST101	20
+ERR2303489	KPN102	NCSE-07	OM2014-0331	2014-01-27	environmental	Klebsiella pneumoniae	ST101	20
+ERR2303490	KPN103	NCSE-07	OM2014-0331	2014-01-27	environmental	Klebsiella pneumoniae	ST1411	5
+ERR2303491	KPN104	NCSE-05	OM2014-0332	2014-01-27	environmental	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303492	KPN105	NCS-0103	OM2014-0345	2014-01-28	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303493	KPN106	NCS-0103	OM2014-0345	2014-01-28	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303494	KPN107	NCS-0120	OM2014-0368	2014-01-30	carriage	Klebsiella pneumoniae	ST1035	27
+ERR2303495	KPN108	NCS-0120	OM2014-0368	2014-01-30	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303496	KPN109	NCS-0116	OM2014-0369	2014-01-30	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303497	KPN110	NCS-0115	OM2014-0370	2014-01-30	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303498	KPN111	NCS-0115	OM2014-0370	2014-01-30	carriage	Klebsiella pneumoniae	ST1411	5
+ERR2303499	KPN112	NCS-0108	OM2014-0371	2014-01-30	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303500	KPN113	NCS-0112	OM2014-0372	2014-01-30	carriage	Klebsiella pneumoniae	ST45	31
+ERR2303501	KPN114	NCS-0112	OM2014-0372	2014-01-30	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303502	KPN115	NCS-0117	OM2014-0373	2014-01-30	carriage	Klebsiella pneumoniae	ST37	29
+ERR2303503	KPN116	NCS-0117	OM2014-0373	2014-01-30	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303504	KPN117	NCS-0118	OM2014-0374	2014-01-30	carriage	Klebsiella pneumoniae	ST394	30
+ERR2303505	KPN118	NCS-0118	OM2014-0374	2014-01-30	carriage	Klebsiella pneumoniae	ST1322	32
+ERR2303506	KPN119	NCS-0119	OM2014-0375	2014-01-30	carriage	Klebsiella pneumoniae	ST394	30
+ERR2303507	KPN120	NCS-0117	OM2014-0390	2014-01-31	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303508	KPN121	NCS-0117	OM2014-0390	2014-01-31	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303509	KPN122	NCS-0122	OM2014-0396	2014-02-01	carriage	Klebsiella pneumoniae	ST394	30
+ERR2303510	KPN123	NCS-0108	OM2014-0401	2014-02-03	carriage	Klebsiella pneumoniae	ST101	20
+ERR2303511	KPN124	NCS-0117	OM2014-0402	2014-02-03	carriage	Klebsiella pneumoniae	ST394	30
+ERR2303388	KPN225	NCS-0159	OM2014-0940	2014-03-10	carriage	Klebsiella pneumoniae	ST502	1
+ERR2303389	KPN2	NCS-0084	OM2014-0012	2014-01-02	carriage	Klebsiella pneumoniae	ST252	2
+ERR2303390	KPN3	NCS-0082	OM2014-0013	2014-01-02	carriage	Klebsiella pneumoniae	ST309	3
+ERR2303391	KPN4	NCS-0082	OM2014-0013	2014-01-02	carriage	Klebsiella pneumoniae	ST29	4
+ERR2303392	KPN5	NCS-0095	OM2014-0014	2014-01-02	carriage	Klebsiella pneumoniae	ST309	3
+ERR2303393	KPN6	NCS-0091	OM2014-0015	2014-01-02	carriage	Klebsiella pneumoniae	ST1411	5
+ERR2303394	KPN7	NCS-0091	OM2014-0015	2014-01-02	carriage	Klebsiella pneumoniae	ST950	6
+ERR2303395	KPN8	NCS-0098	OM2014-0016	2014-01-02	carriage	Klebsiella pneumoniae	ST950	6
+ERR2303396	KPN9	NCS-0099	OM2014-0020	2014-01-02	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303397	KPN10	NCS-0099	OM2014-0020	2014-01-02	carriage	Klebsiella pneumoniae	ST1035	8
+ERR2303398	KPN11	NCS-0100	OM2014-0021	2014-01-02	carriage	Klebsiella pneumoniae	ST163	9
+ERR2303399	KPN12	NCS-0092	OM2014-0024	2014-01-03	carriage	Klebsiella pneumoniae	ST1074-1LV	10
+ERR2303400	KPN13	NCS-0092	OM2014-0024	2014-01-03	carriage	Klebsiella pneumoniae	ST950	6
+ERR2303401	KPN14	NCS-0095	OM2014-0039	2014-01-04	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303402	KPN15	NCS-0084	OM2014-0045	2014-01-05	carriage	Klebsiella pneumoniae	ST1074-1LV	10
+ERR2303403	KPN16	NCS-0091	OM2014-0052	2014-01-06	carriage	Klebsiella pneumoniae	ST1074-1LV	10
+ERR2303404	KPN17	NCS-0098	OM2014-0053	2014-01-06	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303405	KPN18	NCS-0098	OM2014-0053	2014-01-06	carriage	Klebsiella pneumoniae	ST244	11
+ERR2303406	KPN19	NCS-0099	OM2014-0054	2014-01-06	carriage	Klebsiella pneumoniae	ST394	12
+ERR2303407	KPN20	NCS-0099	OM2014-0054	2014-01-06	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303408	KPN21	NCS-0082	OM2014-0055	2014-01-06	carriage	Klebsiella pneumoniae	ST1074-1LV	7
+ERR2303409	KPN22	NCS-0101	OM2014-0056	2014-01-06	carriage	Klebsiella pneumoniae	ST409	13
+ERR2303410	KPN23	NCS-0100	OM2014-0057	2014-01-06	carriage	Klebsiella pneumoniae	ST626	14
+ERR2303411	KPN24	NCS-0092	OM2014-0058	2014-01-06	carriage	Klebsiella pneumoniae	ST409	13
+SRR5877447	SRR5877447	NCS-0026	OM2013-1893	2013-10-16	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST414	47
+SRR5877448	SRR5877448	NCS-0013	OM2013-1706	2013-09-28	carriage	Klebsiella pneumoniae	ST234	53
+SRR5877449	SRR5877449	NCS-0002	OM2013-1543	2013-09-13	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1191-1LV	54
+SRR5877450	SRR5877450	NCS-0023	OM2013-1804	2013-10-08	carriage	Klebsiella pneumoniae	ST307	33
+SRR5877451	SRR5877451	NCS-0023	OM2013-1804	2013-10-08	carriage	Klebsiella pneumoniae	ST22	55
+SRR5877452	SRR5877452	NCS-0006	OM2013-1830	2013-10-10	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1504	56
+SRR5877453	SRR5877453	NCS-0003	OM2013-1517	2013-09-12	carriage	Klebsiella pneumoniae	ST11	57
+SRR5877454	SRR5877454	NCS-0035	OM2013-1947	2013-10-21	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST283	58
+SRR5877455	SRR5877455	NCS-0010	OM2013-1674	2013-09-25	carriage	Klebsiella pneumoniae	ST22	59
+SRR5877456	SRR5877456	NCS-0022	OM2013-1794	2013-10-07	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST414	47
+SRR5877457	SRR5877457	NCS-0004	OM2013-1518	2013-09-12	carriage	Klebsiella pneumoniae	ST268	60
+SRR5877458	SRR5877458	NCS-0032	OM2013-1925	2013-10-18	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1473	61
+SRR5877459	SRR5877459	NCS-0016	OM2013-1723	2013-09-30	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1115-2LV	62
+SRR5877460	SRR5877460	NCS-0021	OM2013-1829	2013-10-10	carriage	Klebsiella pneumoniae	ST15	63
+SRR5877461	SRR5877461	NCS-0027	OM2013-1894	2013-10-16	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST138	64
+SRR5877462	SRR5877462	NCS-0014	OM2013-1791	2013-10-07	carriage	Klebsiella pneumoniae	ST22	59
+SRR5877463	SRR5877463	NCS-0021	OM2013-1829	2013-10-10	carriage	Klebsiella pneumoniae	ST252	65
+SRR5877464	SRR5877464	NCS-0011	OM2013-1873	2013-10-14	carriage	Klebsiella pneumoniae	ST15	63
+SRR5877465	SRR5877465	NCS-0003	OM2013-1548	2013-09-14	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1191	66
+SRR5877466	SRR5877466	NCS-0018	OM2013-1761	2013-10-05	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1834-2LV	46
+SRR5877467	SRR5877467	NCS-0006	OM2013-1870	2013-10-14	carriage	Klebsiella pneumoniae	ST29	18
+SRR5877468	SRR5877468	NCS-0035	OM2013-1933	2013-10-18	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST283	58
+SRR5877469	SRR5877469	NCS-0026	OM2013-1871	2013-10-14	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST414	47
+SRR5877470	SRR5877470	NCS-0017	OM2013-1738	2013-10-01	carriage	Klebsiella pneumoniae	ST2353	67
+SRR5877471	SRR5877471	NCS-0011	OM2013-1827	2013-10-10	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1834-2LV	46
+SRR5877472	SRR5877472	NCS-0037	OM2013-1988	2013-10-24	carriage	Klebsiella pneumoniae	ST1	68
+SRR5877473	SRR5877473	NCS-0031	OM2013-1896	2013-10-16	carriage	Klebsiella pneumoniae	ST29	18
+SRR5877474	SRR5877474	NCS-0026	OM2013-1843	2013-10-11	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST414	47
+SRR5877475	SRR5877475	NCS-0015	OM2013-1687	2013-09-26	carriage	Klebsiella pneumoniae	ST234	53
+SRR5877476	SRR5877476	NCS-0011	OM2013-1892	2013-10-16	carriage	Klebsiella pneumoniae	ST15	63
+SRR5877477	SRR5877477	NCS-0001	OM2013-1520	2013-09-12	carriage	Klebsiella pneumoniae	ST76	69
+SRR5877478	SRR5877478	NCS-0031	OM2013-1944	2013-10-21	carriage	Klebsiella pneumoniae	ST252	65
+SRR5877479	SRR5877479	NCS-0031	OM2013-1990	2013-10-24	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1191	70
+SRR5877480	SRR5877480	NCS-0030	OM2013-1946	2013-10-21	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	71
+SRR5877481	SRR5877481	NCS-0011	OM2013-1796	2013-10-07	carriage	Klebsiella pneumoniae	ST20	19
+SRR5877482	SRR5877482	NCS-0018	OM2013-1739	2013-10-01	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1834-2LV	46
+SRR5877483	SRR5877483	NCS-0007	OM2013-1688	2013-09-26	carriage	Klebsiella pneumoniae	ST22	59
+SRR5877484	SRR5877484	NCS-0006	OM2013-1830	2013-10-10	carriage	Klebsiella pneumoniae	ST20	19
+SRR5877485	SRR5877485	NCS-0033	OM2013-1942	2013-10-21	carriage	Klebsiella pneumoniae	ST70	72
+SRR5877486	SRR5877486	NCS-0005	OM2013-1645	2013-09-23	carriage	Klebsiella pneumoniae	ST656	73
+SRR5877487	SRR5877487	NCS-0027	OM2013-1903	2013-10-17	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST414	47
+SRR5877488	SRR5877488	NCS-0029	OM2013-1897	2013-10-16	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1834-2LV	46
+SRR5877489	SRR5877489	NCS-0022	OM2013-1807	2013-10-08	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST283-3LV	74
+SRR5877490	SRR5877490	NCS-0016	OM2013-1760	2013-10-05	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1115-2LV	62
+SRR5877491	SRR5877491	NCS-0014	OM2013-1824	2013-10-10	carriage	Klebsiella pneumoniae	ST22	59
+SRR5877492	SRR5877492	NCS-0006	OM2013-1646	2013-09-23	carriage	Klebsiella pneumoniae	ST20	19
+SRR5877493	SRR5877493	NCS-0030	OM2013-1946	2013-10-21	carriage	Klebsiella pneumoniae	ST25	75
+SRR5877494	SRR5877494	NCS-0007	OM2013-1696	2013-09-27	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1191	70
+SRR5877495	SRR5877495	NCS-0029	OM2013-1926	2013-10-18	carriage	Klebsiella pneumoniae	ST15	63
+SRR5877496	SRR5877496	NCS-0025	OM2013-1856	2013-10-13	carriage	Klebsiella pneumoniae	ST22	16
+SRR5877497	SRR5877497	NCS-0023	OM2013-1828	2013-10-10	carriage	Klebsiella pneumoniae	ST307	33
+SRR5877498	SRR5877498	NCS-0011	OM2013-1827	2013-10-10	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1834-2LV	46
+SRR5877499	SRR5877499	NCS-0023	OM2013-1889	2013-10-16	carriage	Klebsiella pneumoniae	ST16	76
+SRR5877500	SRR5877500	NCS-0034	OM2013-1932	2013-10-18	carriage	Klebsiella pneumoniae	ST502-1LV	77
+SRR5877501	SRR5877501	NCS-0031	OM2013-1907	2013-10-17	carriage	Klebsiella pneumoniae	ST29	18
+SRR5877502	SRR5877502	NCS-0021	OM2013-1829	2013-10-10	carriage	Klebsiella pneumoniae	ST17	17
+SRR5877503	SRR5877503	NCS-0022	OM2013-1807	2013-10-08	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST414	47
+SRR5877504	SRR5877504	NCS-0005	OM2013-1605	2013-09-19	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1191	70
+SRR5877505	SRR5877505	NCS-0029	OM2013-1905	2013-10-17	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	71
+SRR5877506	SRR5877506	NCS-0030	OM2013-1906	2013-10-17	carriage	Klebsiella pneumoniae	ST15	63
+SRR5877507	SRR5877507	NCS-0007	OM2013-1607	2013-09-19	carriage	Klebsiella pneumoniae	ST22	59
+SRR5877508	SRR5877508	NCS-0016	OM2013-1698	2013-09-27	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1473	61
+SRR5877509	SRR5877509	NCS-0029	OM2013-1897	2013-10-16	carriage	Klebsiella pneumoniae	ST15	63
+SRR5877510	SRR5877510	NCS-0014	OM2013-1824	2013-10-10	carriage	Klebsiella pneumoniae	ST22	59
+SRR5877511	SRR5877511	NCS-0002	OM2013-1543	2013-09-13	carriage	Klebsiella pneumoniae	ST656	73
+SRR5877512	SRR5877512	NCS-0010	OM2013-1648	2013-09-23	carriage	Klebsiella pneumoniae	ST15	63
+SRR5877513	SRR5877513	NCS-0023	OM2013-1874	2013-10-14	carriage	Klebsiella pneumoniae	ST16	76
+SRR5877514	SRR5877514	NCS-0036	OM2013-1985	2013-10-24	carriage	Klebsiella pneumoniae	ST409	13
+SRR5877515	SRR5877515	NCS-0010	OM2013-1648	2013-09-23	carriage	Klebsiella pneumoniae	ST29	18
+SRR5877516	SRR5877516	NCS-0007	OM2013-1649	2013-09-23	carriage	Klebsiella pneumoniae	ST22	59
+SRR5877517	SRR5877517	NCS-0024	OM2013-1872	2013-10-14	carriage	Klebsiella pneumoniae	ST15	63
+SRR5877518	SRR5877518	NCS-0011	OM2013-1873	2013-10-14	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1834-2LV	46
+SRR5877519	SRR5877519	NCS-0034	OM2013-1948	2013-10-21	carriage	Klebsiella pneumoniae	ST502-1LV	77
+SRR5877520	SRR5877520	NCS-0001	OM2013-1520	2013-09-12	carriage	Klebsiella pneumoniae	ST36	78
+SRR5877521	SRR5877521	NCS-0036	OM2013-1959	2013-10-21	carriage	Klebsiella pneumoniae	ST409	13
+SRR5877522	SRR5877522	NCS-0006	OM2013-1870	2013-10-14	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1504	56
+SRR5877523	SRR5877523	NCS-0024	OM2013-1872	2013-10-14	carriage	Klebsiella pneumoniae	ST252	65
+SRR5877524	SRR5877524	NCS-0001	OM2013-1549	2013-09-14	carriage	Klebsiella pneumoniae	ST15	63
+SRR5877525	SRR5877525	NCS-0027	OM2013-1903	2013-10-17	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1834-2LV	46
+SRR5877526	SRR5877526	NCS-0030	OM2013-1895	2013-10-16	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST334	71
+SRR5877527	SRR5877527	NCS-0031	OM2013-1944	2013-10-21	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST477	79
+SRR5877528	SRR5877528	NCS-0036	OM2013-1985	2013-10-24	carriage	Klebsiella pneumoniae	ST29	18
+SRR5877529	SRR5877529	NCS-0017	OM2013-1729	2013-09-30	carriage	Klebsiella pneumoniae	ST2353	67
+SRR5877530	SRR5877530	NCS-0007	OM2013-1569	2013-09-16	carriage	Klebsiella pneumoniae	ST22	59
+SRR5877531	SRR5877531	NCS-0005	OM2013-1669	2013-09-24	carriage	Klebsiella pneumoniae	ST76	69
+SRR5877532	SRR5877532	NCS-0008	OM2013-1588	2013-09-17	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST1191	70
+SRR5877533	SRR5877533	NCS-0013	OM2013-1676	2013-09-25	carriage	Klebsiella quasipneumoniae subsp. similipneumoniae	ST414	80
+SRR5878374	SRR5878374	NCSE-02	OM2013-1778	2013-10-07	environmental	Klebsiella pneumoniae	ST20	19
+SRR5878375	SRR5878375	NCSE-02	OM2013-1864	2013-10-14	environmental	Klebsiella pneumoniae	ST309	3
+SRR5878376	SRR5878376	NCSE-06	OM2013-1657	2013-09-23	environmental	Klebsiella pneumoniae	ST22	59
+SRR5878377	SRR5878377	NCSE-02	OM2013-1951	2013-10-21	environmental	Klebsiella pneumoniae	ST20	19
+SRR5878378	SRR5878378	NCSE-02	OM2013-1864	2013-10-14	environmental	Klebsiella pneumoniae	ST883-1LV	81
+SRR5878379	SRR5878379	NCSE-05	OM2013-1866	2013-10-14	environmental	Klebsiella pneumoniae	ST101	82
