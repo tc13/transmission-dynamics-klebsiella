@@ -40,7 +40,7 @@ logistic <- function(x){
 #Read in dataset
 #Each row is a patient day in the neonatal unit. Records have been removed for infants colonised at entry and swab intervals with no outcome recorded
 #Records are shown for patients up to the first positive rectal swab for ESBL K. pneumoniae
-kp <- read.csv("klebsiella_acquisition_reproducible.csv", header=T)
+kp <- read.csv("Data/klebsiella_acquisition_reproducible.csv", header=T)
 
 #seperate df with line per swabbing interval (nrow=402) for interval outcome
 kp.interval <- kp[kp$interval_day==kp$interval_length,]
@@ -140,16 +140,16 @@ stan_input <- list(
 #########################
 
 #compile models by reading in .stan files
-rf.mod.A <- stan_model(file = "risk_factor_mod_A.stan",
+rf.mod.A <- stan_model(file = "Models_Stan/risk_factor_mod_A.stan",
                   model_name="rfA")
 
-rf.mod.B <- stan_model(file= "risk_factor_mod_B.stan",
+rf.mod.B <- stan_model(file= "Models_Stan/risk_factor_mod_B.stan",
                       model_name="rfB")
 
-rf.mod.C <- stan_model(file= "risk_factor_mod_C.stan",
+rf.mod.C <- stan_model(file= "Models_Stan/risk_factor_mod_C.stan",
                        model_name="rfC")
 
-rf.mod.D <- stan_model(file = "risk_factor_mod_D.stan",
+rf.mod.D <- stan_model(file = "Models_Stan/risk_factor_mod_D.stan",
                        model_name="rfD")
 
 #Sampling. Assumes a four core processor, change `cores` argument if fewer cores are available 

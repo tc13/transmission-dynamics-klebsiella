@@ -38,7 +38,7 @@ set.seed(1234)
 #patients are present in the data until they become colonised, at which point they are no longer at risk
 #ST information is obtained from the assemblies of the K. pnuemoniae genomes (see methods in paper)
 
-tm <- read.csv("klebsiella_ST_transmission_reproducible.csv", header=T)
+tm <- read.csv("Data/klebsiella_ST_transmission_reproducible.csv", header=T)
 
 #index each patient interval
 counter <- 0
@@ -134,13 +134,13 @@ init_ll_4 <- lapply(1:n_chains, function(id) init_fn_4(chain_id = id))
 #########################
 
 #compile models from .stan files
-tm.mod.1 <- stan_model(file="transmission_mod_1.stan", model_name = "tm1")
+tm.mod.1 <- stan_model(file="Models_Stan/transmission_mod_1.stan", model_name = "tm1")
 
-tm.mod.2 <- stan_model(file="transmission_mod_2.stan", model_name = "tm2")
+tm.mod.2 <- stan_model(file="Models_Stan/transmission_mod_2.stan", model_name = "tm2")
 
-tm.mod.3 <- stan_model(file="transmission_mod_3.stan", model_name = "tm3")
+tm.mod.3 <- stan_model(file="Models_Stan/transmission_mod_3.stan", model_name = "tm3")
 
-tm.mod.4 <- stan_model(file= "transmission_mod_4.stan", trans.mod.4, model_name = "tm4")
+tm.mod.4 <- stan_model(file= "Models_Stan/transmission_mod_4.stan", trans.mod.4, model_name = "tm4")
 
 #Sampling. Assumes a four core processor, change `cores` argument if fewer cores are available 
 tm.fit.1 <- sampling(tm.mod.1, data=stan_tm_input, seed=1,
@@ -261,7 +261,7 @@ CrI(post.4$scale)
 CrI(post.4$location)
 
 #genomic metadata
-meta <- read.table("klebsiella_genomic_metadata.txt", 
+meta <- read.table("Data/klebsiella_genomic_metadata.txt", 
                    header=T, sep = "\t")
 
 carriage <- meta[meta$Isolate_from=="carriage",]
