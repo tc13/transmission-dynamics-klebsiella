@@ -1,5 +1,5 @@
 # transmission-dynamics-klebsiella
-Scripts to allow replication of the analysis from "Transmission dynamics and control of multidrug-resistant Klebsiella pneumoniae in neonates in a developing country"
+Scripts to allow replication of the analysis from "Transmission dynamics and control of multidrug-resistant Klebsiella pneumoniae in neonates in a developing country" by Crellen, T. et al.
 
 The "risk factor models" can be run by following the risk_factor_models_klebsiella.R script in R-studio. This script will load in data for each patient day at risk of becoming colonised from Data/klebsiella_acquisition_reproducible. The Bayesian statistical models are run by calling scripts from the Models_Stan folder. 
 
