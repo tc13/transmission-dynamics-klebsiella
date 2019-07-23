@@ -211,6 +211,19 @@ post.B <- extract(rf.fit.B)
 post.C <- extract(rf.fit.C)
 post.D <- extract(rf.fit.D)
 
+################################
+## Intercept values (Table 2) ##
+################################
+
+CrI.logit <- function(x) signif(logistic(quantile(x, probs=c(0.025, 0.5, 0.975))),2)
+
+CrI.logit(post.A$alpha)
+CrI.logit(post.B$alpha)
+CrI.logit(post.C$alpha)
+CrI.logit(post.D$alpha)
+CrI.logit(post.D$mu)
+CrI.logit(post.D$sigma)
+
 #############################
 ## WAIC from fitted models ##
 #############################
