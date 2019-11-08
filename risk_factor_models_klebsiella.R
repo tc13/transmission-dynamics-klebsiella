@@ -17,7 +17,6 @@ library(rstan)
 #note: ensure rstan is correctly configured for your system see https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started
 library(loo)
 library(lubridate)
-
 #Packages for plotting
 library(ggplot2)
 library(bayesplot)
@@ -38,11 +37,12 @@ logistic <- function(x){
 }
 
 #Read in dataset
-#Each row is a patient day in the neonatal unit. Records have been removed for infants colonised at entry and swab intervals with no outcome recorded
+#Each row is a patient day in the neonatal unit. 
+#Records have been removed for infants colonised at entry and swab intervals with no outcome recorded
 #Records are shown for patients up to the first positive rectal swab for ESBL K. pneumoniae
-kp <- read.csv("Data/klebsiella_acquisition_reproducible.csv", header=T)
+kp <- read.csv("klebsiella_acquisition_reproducible.csv", header=T)
 
-#seperate df with line per swabbing interval (nrow=402) for interval outcome
+#seperate df with line per swabbing interval (nrow=400) for interval outcome
 kp.interval <- kp[kp$interval_day==kp$interval_length,]
 
 #make binary variables for regression
@@ -98,12 +98,12 @@ month_year_levels <- unique(as.factor(kp$month_year))
 month_num  <- sapply(kp$month_year, function(x) match(x, month_year_levels), USE.NAMES = F)
 
 #list of variables for stan input, 
-#note the outcome variable is a different length (402) to the total number of observations (871)
+#note the outcome variable is a different length (400) to the total number of observations (864)
 stan_input <- list(
-  N=nrow(kp),                          #all observations (patient days, n=871)
-  K=max(interval_index),               #number of intervals (n=402)     
+  N=nrow(kp),                          #all observations (patient days, n=864)
+  K=max(interval_index),               #number of intervals (n=400)     
   index=interval_index,                #indexes each interval
-  outcome= kp.interval$outcome,        #outcome from each interval (0/1),n=402
+  outcome= kp.interval$outcome,        #outcome from each interval (0/1),n=400
   L= kp.interval$interval_length,      #gives num of days in each interval
   #time invarying variables
   sex=kp$sex,                          #sex: male=1, female=0
@@ -140,26 +140,35 @@ stan_input <- list(
 #########################
 
 #compile models by reading in .stan files
-rf.mod.A <- stan_model(file = "Models_Stan/risk_factor_mod_A.stan",
+rf.mod.A <- stan_model(file = "risk_factor_mod_A.stan",
                   model_name="rfA")
 
-rf.mod.B <- stan_model(file= "Models_Stan/risk_factor_mod_B.stan",
+rf.mod.A.prior <- stan_model(file = "risk_factor_mod_A_priors.stan",
+                             model_name="rfAp")
+
+rf.mod.B <- stan_model(file= "risk_factor_mod_B.stan",
                       model_name="rfB")
 
-rf.mod.C <- stan_model(file= "Models_Stan/risk_factor_mod_C.stan",
+rf.mod.C <- stan_model(file= "risk_factor_mod_C.stan",
                        model_name="rfC")
 
-rf.mod.D <- stan_model(file = "Models_Stan/risk_factor_mod_D.stan",
+rf.mod.D <- stan_model(file = "risk_factor_mod_D.stan",
                        model_name="rfD")
 
 #Sampling. Assumes a four core processor, change `cores` argument if fewer cores are available 
-
+#Run Model A
 rf.fit.A <- sampling(rf.mod.A, data=stan_input, iter=5000, warmup=2000,
                 seed=5, chains=4, thin=5, cores=4,
                 pars=c("alpha","beta", "interval_p", "log_lik"),
                 control=list(adapt_delta = 0.95))
 
-#Run Model A
+#Run Model A with alternate priors
+rf.fit.Ap <- sampling(rf.mod.A.prior, data=stan_input, iter=5000, warmup=2000,
+                     seed=5, chains=4, thin=5, cores=4,
+                     pars=c("alpha","beta", "interval_p", "log_lik"),
+                     control=list(adapt_delta = 0.95))
+
+#Run Model B
 rf.fit.B <- sampling(rf.mod.B, data=stan_input, seed = 6,
                  iter=5000,warmup=2000,chains=4,thin=5, cores=4,
                  pars=c("alpha","beta", "log_lik"),
@@ -207,32 +216,21 @@ mcmc_trace(post.A.chains,
 #####################################
 
 post.A <- extract(rf.fit.A)
+post.Ap <- extract(rf.fit.Ap)
 post.B <- extract(rf.fit.B)
 post.C <- extract(rf.fit.C)
 post.D <- extract(rf.fit.D)
-
-################################
-## Intercept values (Table 2) ##
-################################
-
-CrI.logit <- function(x) signif(logistic(quantile(x, probs=c(0.025, 0.5, 0.975))),2)
-
-CrI.logit(post.A$alpha)
-CrI.logit(post.B$alpha)
-CrI.logit(post.C$alpha)
-CrI.logit(post.D$alpha)
-CrI.logit(post.D$mu)
-CrI.logit(post.D$sigma)
 
 #############################
 ## WAIC from fitted models ##
 #############################
 
 waic.A <- waic(post.A$log_lik)
+waic.Ap <- waic(post.A$log_lik)
 waic.B <- waic(post.B$log_lik)
 waic.C <- waic(post.C$log_lik)
 waic.D <- waic(post.D$log_lik)
-compare(waic.A, waic.B, waic.C, waic.D)
+compare(waic.A, waic.Ap, waic.B, waic.C, waic.D)
 
 ##############################
 ## Parameter Interpretation ##
@@ -267,6 +265,124 @@ kleb.post.df <- data.frame(
 kleb.quant <- as.data.frame(t(apply(kleb.post.df, 2, function(x) quantile(x, probs=c(0.025, 0.1, 0.5, 0.9, 0.975)))))
 colnames(kleb.quant) <- c("lower.95", "lower.80", "median", "upper.80", "upper.95")
 kleb.quant$variable <- kleb.post.labels
+
+###################################################
+## Comparison of prior distributions for model 1 ##
+###################################################
+
+#range of values to explore normal distribution function
+x <- seq(-6, 6, by=0.1)
+
+#density of priors
+y1 <- dnorm(x= x, mean=0, sd=5)
+y2 <- dnorm(x= x, mean=0, sd=1.5)
+y3 <- dnorm(x=x, mean=0, sd=10)
+y4 <- dnorm(x=x, mean=0, sd=2)
+
+#Ampicillin-gentamicin covariate
+#original prior
+png("/Users/Tom/Google Drive/MORU/manuscript/Supp-Fig-3-prior1-beta10.png", width=6.5, height=4.5, units="in", res=280)
+
+plot(exp(x), y1, type="l", lwd=2, ylim=c(0,1), xlim=c(0,4),
+     xaxs="i", yaxs="i", ylab="Probability Density", 
+     xlab="Odds Ratio", col="red")
+
+lines(density(exp(post.A$beta[,10]), adjust=2), lwd=2, col="blue")
+
+abline(v=median(exp(post.A$beta[,10])), col="blue",lwd=2, lty=2)
+#title and legend
+title(main = expression(paste("Ampicillin-gentamicin covariate, prior is normal(", mu, "=0, ", sigma, "=5)")))
+
+legend(2.7, 0.9, legend=c("Prior", "Posterior", "Posterior Median"),
+       col=c("red", "blue", "blue"), lty=c(1,1,2), cex=0.8)
+
+dev.off()
+
+#new prior
+png("/Users/Tom/Google Drive/MORU/manuscript/Supp-Fig-3-prior2-beta10.png", width=6.5, height=4.5, units="in", res=280)
+
+plot(exp(x), y2, type="l", lwd=2, ylim=c(0,1), xlim=c(0,4),
+     xaxs="i", yaxs="i", ylab="Probability Density", xlab="Odds Ratio", col="red")
+
+lines(density(exp(post.Ap$beta[,10]), adjust=2), lwd=2, col="blue")
+abline(v=median(exp(post.Ap$beta[,10])), lwd=2, col="blue", lty=2)
+title(main = expression(paste("Ampicillin-gentamicin covariate, prior is normal(", mu, "=0, ", sigma, "=1.5)")))
+
+legend(2.7, 0.9, legend=c("Prior", "Posterior", "Posterior Median"),
+       col=c("red", "blue", "blue"), lty=c(1,1,2), cex=0.8)
+
+dev.off()
+
+#Breast milk feeding covariate
+#original prior
+png("/Users/Tom/Google Drive/MORU/manuscript/Supp-Fig-3-prior1-beta4.png", width=6.5, height=4.5, units="in", res=280)
+
+plot(exp(x), y1, type="l", lwd=2, ylim=c(0,2), xlim=c(0,2),
+     xaxs="i", yaxs="i", ylab="Probability Density", 
+     xlab="Odds Ratio", col="red")
+
+lines(density(exp(post.A$beta[,4]), adjust=2), lwd=2, col="blue")
+
+abline(v=median(exp(post.A$beta[,4])), col="blue",lwd=2, lty=2)
+#title and legend
+title(main = expression(paste("Breast milk fed covariate, prior is normal(", mu, "=0, ", sigma, "=5)")))
+
+legend(1.3, 1.8, legend=c("Prior", "Posterior", "Posterior Median"),
+       col=c("red", "blue", "blue"), lty=c(1,1,2), cex=0.8)
+
+dev.off()
+
+#new prior
+png("/Users/Tom/Google Drive/MORU/manuscript/Supp-Fig-3-prior2-beta4.png", width=6.5, height=4.5, units="in", res=280)
+
+plot(exp(x), y2, type="l", lwd=2, ylim=c(0,2), xlim=c(0,2),
+     xaxs="i", yaxs="i", ylab="Probability Density", xlab="Odds Ratio", col="red")
+
+lines(density(exp(post.Ap$beta[,4]), adjust=2), lwd=2, col="blue")
+abline(v=median(exp(post.Ap$beta[,4])), lwd=2, col="blue", lty=2)
+title(main = expression(paste("Breast milk fed covariate, prior is normal(", mu, "=0, ", sigma, "=1.5)")))
+
+legend(1.3, 1.8, legend=c("Prior", "Posterior", "Posterior Median"),
+       col=c("red", "blue", "blue"), lty=c(1,1,2), cex=0.8)
+
+dev.off()
+
+## Intercept (alpha) - with different priors
+#original prior - normal(0, 10)
+png("/Users/Tom/Google Drive/MORU/manuscript/Supp-Fig-3-prior1-alpha.png", width=6.5, height=4.5, units="in", res=280)
+
+plot(logistic(x), y3, type="l", lwd=2, ylim=c(0,3), xlim=c(0,1),
+     xaxs="i", yaxs="i", ylab="Probability Density", 
+     xlab="Probability of Outcome", col="red")
+
+lines(density(logistic(post.A$alpha), adjust=2), lwd=2, col="blue")
+
+abline(v=median(logistic(post.A$alpha)), col="blue",lwd=2, lty=2)
+#title and legend
+title(main = expression(paste("Intercept (", alpha, "), prior is normal(", mu, "=0, ", sigma, "=10)")))
+
+legend(0.6, 2.5, legend=c("Prior", "Posterior", "Posterior Median"),
+       col=c("red", "blue", "blue"), lty=c(1,1,2), cex=0.8)
+
+dev.off()
+
+#new prior - normal(0, 2)
+png("/Users/Tom/Google Drive/MORU/manuscript/Supp-Fig-3-prior2-alpha.png", width=6.5, height=4.5, units="in", res=280)
+
+plot(logistic(x), y4, type="l", lwd=2, ylim=c(0,3), xlim=c(0,1),
+     xaxs="i", yaxs="i", ylab="Probability Density", 
+     xlab="Probability of Outcome", col="red")
+
+lines(density(logistic(post.Ap$alpha), adjust=2), lwd=2, col="blue")
+
+abline(v=median(logistic(post.Ap$alpha)), col="blue",lwd=2, lty=2)
+#title and legend
+title(main = expression(paste("Intercept (", alpha, "), prior is normal(", mu, "=0, ", sigma, "=2)")))
+
+legend(0.6, 2.5, legend=c("Prior", "Posterior", "Posterior Median"),
+       col=c("red", "blue", "blue"), lty=c(1,1,2), cex=0.8)
+
+dev.off()
 
 ####################################################
 # Figure 2A: Posterior Distribution of covariates 
