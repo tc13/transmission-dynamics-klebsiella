@@ -1,4 +1,4 @@
-//Klebsiella transmission model 2
+//Klebsiella transmission model 5- variable intercept by ST
 //implemented in rstan. Author Thomas Crellen
 
 data{
@@ -7,11 +7,14 @@ data{
   int<lower=1> L[K];                      //length of each interval
   int<lower=0,upper=1> outcome[K];        //outcome for each cluster
   int<lower=0> patients_colonised[N];     //number of patients colonised with ST
-  int<lower=0> patients_colonised_lag[N]; //number of patients colonised with ST (day before)
+  int N_ST;                               //Number of sequence types
+  int<lower=1> ST[N];                     //indexes sequence type
 }
 parameters{
-  real<lower=0,upper=1> alpha;
-  real<lower=0,upper=(1-alpha)> beta;
+  real<lower=0,upper=1> beta;
+  real<lower=0,upper=(1-beta)> alpha[N_ST];
+  real<lower=0> scale;
+  real<lower=0> location;
 }
 model{
   vector[K] p;                              //vector for interval probability (n=402)
@@ -19,16 +22,19 @@ model{
   int counter;                              //set up counter
   
   //priors (weakly informative)
-  alpha ~ beta(2, 8);
+  alpha ~ beta(scale, location);
   beta ~ beta(2, 8);
+  scale ~ normal(2,5);
+  location ~ normal(6, 5);
   
   //build likelihood function
   for (i in 1:N) {
     //store values for each day
     real day_prob;
     real day_prob_inv;
+    
     //get odds per day from linear predictors
-    day_prob= (alpha + beta*patients_colonised[i]);
+    day_prob= (alpha[ST[i]] + beta*patients_colonised[i]);
     
     day_prob_inv = 1-day_prob;                      //1-probability 
     s[i] = day_prob_inv;                            //store daily 1-probablity in s vector
@@ -55,7 +61,7 @@ generated quantities{                                   //stores probabilites fr
   for (i in 1:N) {
     real day_prob;
     real day_prob_inv;
-    day_prob = (alpha + beta*patients_colonised[i]);
+    day_prob = (alpha[ST[i]] + beta*patients_colonised[i]);
     day_prob_inv = 1-day_prob;                    
     day_p[i] = day_prob_inv;                      
   }

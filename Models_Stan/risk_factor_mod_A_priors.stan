@@ -32,8 +32,8 @@ model{
   vector[N] s;          //vector for day probability (n=817)
   int counter;          //set up counter
   //priors (weakly informative)
-  alpha ~ normal(0, 10);
-  beta ~ normal(0, 5);
+  alpha ~ normal(0, 2);
+  beta ~ normal(0, 1.5);
   //build likelihood function
   for (i in 1:N) {
     //store values for each day
